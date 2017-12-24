@@ -1,6 +1,7 @@
 package es.angelfrancisco.trainingstorm;
 
 import es.angelfrancisco.trainingstorm.bolt.AnalyzeTweetsBolt;
+import es.angelfrancisco.trainingstorm.bolt.ExtractMentionsBolt;
 import es.angelfrancisco.trainingstorm.spout.TwitterSpout;
 import org.apache.storm.Config;
 import org.apache.storm.LocalCluster;
@@ -22,6 +23,7 @@ public class Topology {
         // Add spouts and bolts to the topology
         topologyBuilder.setSpout("twitter-spout", new TwitterSpout(args));
         topologyBuilder.setBolt("count-characters", new AnalyzeTweetsBolt()).shuffleGrouping("twitter-spout");
+        topologyBuilder.setBolt("extract-mentions", new ExtractMentionsBolt()).shuffleGrouping("count-characters", "status");
 
         // Define cluster configuration
         // With setDebug(true) the output console will show Storm debug log
