@@ -1,0 +1,5 @@
+debug=true
+oauth.consumerKey=[Your Twitter consumer key]
+oauth.consumerSecret=[Your Twitter consumer secret]
+oauth.accessToken=[Your Twitter access token]
+oauth.accessTokenSecret=[Your Twitter access token secret]

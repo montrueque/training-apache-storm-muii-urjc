@@ -26,3 +26,9 @@ gen
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Project files and directories
+logs/
+target/
+
+src/main/resources/twitter4j.properties
