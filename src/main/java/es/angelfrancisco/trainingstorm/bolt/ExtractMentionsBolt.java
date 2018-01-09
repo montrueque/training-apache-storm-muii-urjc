@@ -6,7 +6,6 @@ import org.apache.storm.topology.OutputFieldsDeclarer;
 import org.apache.storm.topology.base.BaseRichBolt;
 import org.apache.storm.tuple.Tuple;
 import twitter4j.Status;
-import twitter4j.UserMentionEntity;
 
 import java.util.Map;
 
@@ -19,6 +18,8 @@ public class ExtractMentionsBolt extends BaseRichBolt {
 
     // Bolt initialization
     public void execute(Tuple tuple) {
+        // The logic of this bolt is the store (in this case, print) the tweet id and it associated mentions
+
         Status status = (Status) tuple.getValueByField("status");
 
         int mentions = status.getUserMentionEntities().length;

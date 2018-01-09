@@ -1,6 +1,5 @@
 package es.angelfrancisco.trainingstorm.bolt;
 
-import org.apache.storm.shade.org.apache.commons.lang.WordUtils;
 import org.apache.storm.task.OutputCollector;
 import org.apache.storm.task.TopologyContext;
 import org.apache.storm.topology.OutputFieldsDeclarer;
