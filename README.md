@@ -18,9 +18,10 @@ The structure of the topology created is as follows:
 To execute the project follow this steps (the easiest way):
 1. Clone this repo.
 2. Open project with your favorite IDE.
-3. Rename/copy src/main/resources/twitter4j.properties.example by twitter4j.properties and set your Twitter keys. You can create an app for Twitter [here](https://apps.twitter.com/).
+3. Rename/copy `src/main/resources/twitter4j.properties.example` by `twitter4j.properties` and set your Twitter keys. You can create an app for Twitter [here](https://apps.twitter.com/).
 4. Set in run configuration the word/words you want to set as filter. Try with popular words (e.g. "_Donald Trump_"), hashtags in TT... to watch the real-time effect
 5. Run and enjoy! You should see something like this:
+
 ![IntelliJ IDEA screenshot](./misc/intellij-idea-console-screenshot.png)
 
 ## Credits
