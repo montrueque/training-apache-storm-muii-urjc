@@ -30,7 +30,7 @@ public class Topology {
         // Define cluster configuration
         // With setDebug(true) the output console will show Storm debug log
         Config config = new Config();
-        config.setDebug(true);
+        config.setDebug(false);
 
         // Create Storm local cluster and send it the topology created to being run
         // This LocalCluster simulates a Storm cluster in a local/development environment
